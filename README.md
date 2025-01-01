@@ -1,49 +1,140 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+  <img alt="TripVar" src="/static/images/travel-hero.svg" width="200" />
 </p>
 <h1 align="center">
-  Gatsby Minimal Starter
+  TripVar - AI Travel Planning Assistant
 </h1>
 
-## 🚀 Quick start
+<p align="center">
+  A modern travel planning platform powered by AI to create personalized trip itineraries.
+</p>
 
-1.  **Create a Gatsby site.**
+## 🚀 Features
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+- **AI-Powered Planning**: Get personalized travel recommendations based on your preferences
+- **Local Insights**: Discover hidden gems and authentic experiences
+- **Smart Itineraries**: Optimized travel plans that make the most of your time and budget
+- **Real-time Chat**: Interactive AI assistant to help plan your perfect trip
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## 🛠️ Tech Stack
 
-2.  **Start developing.**
+- [Gatsby](https://www.gatsbyjs.com/) - React-based static site generator
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [React](https://reactjs.org/) - JavaScript library for user interfaces
+- OpenAI API (Coming soon) - For AI-powered travel recommendations
 
-    Navigate into your new site’s directory and start it up.
+## 🚀 Quick Start
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+1. **Clone the repository**
 
-3.  **Open the code and start customizing!**
+   ```shell
+   git clone https://github.com/mfarsx/tripvar.git
+   ```
 
-    Your site is now running at http://localhost:8000!
+2. **Install dependencies**
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+   ```shell
+   cd tripvar
+   npm install
+   ```
 
-4.  **Learn more**
+3. **Start development server**
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+   ```shell
+   npm run develop
+   ```
 
-## 🚀 Quick start (Netlify)
+4. **Open the source code and start editing!**
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+   Your site is now running at `http://localhost:8000`
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+## 📁 Project Structure
+
+```
+/
+├── src/
+│   ├── pages/
+│   │   ├── index.js
+│   │   └── 404.js
+│   └── styles/
+│       └── global.css
+├── static/
+│   ├── images/
+│   │   └── travel-hero.svg
+│   └── icons/
+│       ├── ai-assistant.svg
+│       ├── local-insights.svg
+│       └── plan.svg
+└── gatsby-config.js
+```
+
+## 🔄 CI/CD
+
+This project uses GitHub Actions for continuous integration and deployment. The following workflows are configured:
+
+### Build and Test Workflow
+
+Triggers on:
+
+- Push to main branch
+- Pull request to main branch
+
+Actions:
+
+- Sets up Node.js environment
+- Installs dependencies
+- Builds the Gatsby site
+- Runs tests (coming soon)
+- Creates build artifacts
+
+```yaml
+name: Build and Test
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+```
+
+## 🎯 Roadmap
+
+- [ ] Integration with OpenAI API
+- [ ] User authentication
+- [ ] Save and share trip itineraries
+- [ ] Mobile app development
+- [ ] Multi-language support
+- [ ] Add comprehensive test suite
+- [ ] Implement automated deployment
+
+## 🤝 Contributing
+
+Contributions are always welcome! Here's how you can help:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
+
+Please make sure to update tests as appropriate and follow the existing code style.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Mehmet Fatih Arslan**
+
+- GitHub: [@mfarsx](https://github.com/mfarsx)
+
+## 💫 Acknowledgments
+
+- Built with [Gatsby](https://www.gatsbyjs.com/)
+- Icons from [Material Design Icons](https://materialdesignicons.com/)
+- Powered by [Tailwind CSS](https://tailwindcss.com/)
+
+## 📊 Status
+
+![GitHub Actions Workflow Status](https://github.com/mfarsx/tripvar/actions/workflows/gatsby.yml/badge.svg)

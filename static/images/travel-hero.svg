@@ -1,0 +1,11 @@
+<svg width="786" height="526" xmlns="http://www.w3.org/2000/svg">
+  <!-- Basit bir seyahat illüstrasyonu -->
+  <style>
+    .primary { fill: #7C3AED; }
+    .secondary { fill: #A78BFA; }
+    .accent { fill: #C4B5FD; }
+  </style>
+  <circle cx="393" cy="263" r="200" class="primary" opacity="0.1"/>
+  <path d="M393 63c110.5 0 200 89.5 200 200s-89.5 200-200 200-200-89.5-200-200 89.5-200 200-200z" class="secondary" opacity="0.05"/>
+  <!-- Daha fazla SVG elementi eklenebilir -->
+</svg> 
