@@ -1,0 +1,29 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tripvar-web
+    ports:
+      - "8000:8000"
+      - "9929:9929"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - GATSBY_TELEMETRY_DISABLED=1
+    tty: true
+    stdin_open: true
+
+  prod:
+    build:
+      context: .
+      dockerfile: Dockerfile.ci
+    container_name: tripvar-prod
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - web 
