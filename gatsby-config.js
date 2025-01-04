@@ -1,10 +1,15 @@
+require("dotenv").config();
+
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
   siteMetadata: {
-    title: `My Gatsby Site`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `TripVar`,
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-postcss"]
+  plugins: ["gatsby-plugin-postcss"],
+  flags: {
+    DEV_SSR: false, // Development'ta SSR'ı devre dışı bırak
+  },
 };

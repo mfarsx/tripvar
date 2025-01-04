@@ -4,16 +4,28 @@
 
 @layer base {
   body {
-    @apply antialiased;
+    @apply antialiased bg-purple-50;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-300;
+    @apply bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed;
   }
-  
+
   .input-primary {
-    @apply px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500;
+    @apply px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .chat-message {
+    @apply p-3 rounded-lg max-w-[80%] transition-all duration-300 ease-in-out;
+  }
+
+  .chat-message-assistant {
+    @apply bg-gray-100 hover:bg-gray-200;
+  }
+
+  .chat-message-user {
+    @apply bg-purple-100 ml-auto hover:bg-purple-200;
   }
 }

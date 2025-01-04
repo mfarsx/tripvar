@@ -13,6 +13,7 @@ services:
     environment:
       - NODE_ENV=development
       - GATSBY_TELEMETRY_DISABLED=1
+      - GATSBY_HUGGINGFACE_API_KEY=${GATSBY_HUGGINGFACE_API_KEY}
     tty: true
     stdin_open: true
 
@@ -25,5 +26,6 @@ services:
       - "80:80"
     environment:
       - NODE_ENV=production
+      - GATSBY_HUGGINGFACE_API_KEY=${GATSBY_HUGGINGFACE_API_KEY}
     depends_on:
       - web 
